@@ -1,1 +1,11 @@
-!function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.myUtils=t():e.myUtils=t()}(self,(()=>(()=>{"use strict";var e={d:(t,n)=>{for(var o in n)e.o(n,o)&&!e.o(t,o)&&Object.defineProperty(t,o,{enumerable:!0,get:n[o]})},o:(e,t)=>Object.prototype.hasOwnProperty.call(e,t),r:e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})}},t={};function n(e,t){return Math.floor(Math.random()*(t-e+1)+e)}function o(e=[]){let t=[[]];for(let n=0;n<e.length;n++){let o=[];for(let r=0;r<t.length;r++)for(let d=0;d<e[n].length;d++)o.push(t[r].concat(e[n][d]));t=o}return t}function r(e=[]){return o(e).sort((()=>.5-Math.random()))}function d(e=document,t=window,n){let o=e.documentElement,r="orientationchange"in window?"orientationchange":"resize",d=function(){let e=o.clientWidth;e&&(o.style.fontSize=e/n*100+"px")};e.addEventListener&&(t.addEventListener(r,d,!1),e.addEventListener("DOMContentLoaded",d,!1))}function i(){window.onload=function(){document.addEventListener("touchstart",(function(e){e.touches.length>1&&e.preventDefault()}));let e=0;document.addEventListener("touchend",(function(t){let n=(new Date).getTime();n-e<=300&&t.preventDefault(),e=n}),!1),document.addEventListener("gesturestart",(function(e){e.preventDefault()}))}()}return e.r(t),e.d(t,{getRandomInt:()=>n,rem:()=>d,stopZoom:()=>i,towArray:()=>o,towArrayRandom:()=>r}),t})()));
+function myCDN() {
+  window.dialogTime = 1706767200000
+  window.isOpen = false
+
+  let dialogTime = 1706767200000
+  let isOpen = false;
+  return {
+    dialogTime,
+    isOpen
+  }
+}
